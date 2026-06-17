@@ -1,0 +1,58 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="0%" r="75%">
+      <stop offset="0%" stop-color="#2b9cff" stop-opacity="0.28"/>
+      <stop offset="60%" stop-color="#2b9cff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accentText" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="120%" stop-color="#8fc0ff"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="#0a0a0b"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect x="0.5" y="0.5" width="1199" height="629" rx="0" stroke="#ffffff" stroke-opacity="0.06"/>
+
+  <!-- brand -->
+  <g transform="translate(80, 78)">
+    <rect width="46" height="46" rx="11" fill="#2b9cff"/>
+    <path d="M16 35V11h11a6 6 0 0 1 0 12H16" fill="none" stroke="#0a0a0b" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M16 23h12.5a6 6 0 0 1 0 12H16" fill="none" stroke="#0a0a0b" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="64" y="32" font-family="Helvetica, Arial, sans-serif" font-size="27" font-weight="700" fill="#ededee" letter-spacing="-0.5">BigFatPrompts</text>
+    <g transform="translate(285, 8)">
+      <rect width="118" height="30" rx="15" fill="#161618" stroke="#ffffff" stroke-opacity="0.1"/>
+      <text x="59" y="20" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="15" font-weight="600" fill="#a0a0a6">for Framer</text>
+    </g>
+  </g>
+
+  <!-- headline -->
+  <text x="78" y="300" font-family="Helvetica, Arial, sans-serif" font-size="86" font-weight="800" fill="#ededee" letter-spacing="-3">Big, fat prompts</text>
+  <text x="78" y="396" font-family="Helvetica, Arial, sans-serif" font-size="86" font-weight="800" fill="url(#accentText)" letter-spacing="-3">for building in Framer.</text>
+
+  <!-- subhead -->
+  <text x="80" y="462" font-family="Helvetica, Arial, sans-serif" font-size="28" font-weight="400" fill="#a0a0a6">A curated directory of copy-paste prompts for the Framer agent.</text>
+
+  <!-- chips -->
+  <g transform="translate(80, 506)" font-family="Helvetica, Arial, sans-serif" font-size="19" font-weight="500">
+    <g>
+      <rect width="186" height="44" rx="22" fill="#101012" stroke="#ffffff" stroke-opacity="0.09"/>
+      <text x="24" y="28" fill="#cfd8e6">Hero sections</text>
+    </g>
+    <g transform="translate(202,0)">
+      <rect width="218" height="44" rx="22" fill="#101012" stroke="#ffffff" stroke-opacity="0.09"/>
+      <text x="24" y="28" fill="#cfd8e6">Scroll animations</text>
+    </g>
+    <g transform="translate(436,0)">
+      <rect width="170" height="44" rx="22" fill="#101012" stroke="#ffffff" stroke-opacity="0.09"/>
+      <text x="24" y="28" fill="#cfd8e6">CMS &amp; blog</text>
+    </g>
+    <g transform="translate(622,0)">
+      <rect width="146" height="44" rx="22" fill="#101012" stroke="#ffffff" stroke-opacity="0.09"/>
+      <text x="24" y="28" fill="#cfd8e6">Copywriting</text>
+    </g>
+  </g>
+
+  <!-- url -->
+  <text x="1120" y="560" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="600" fill="#2b9cff">bigfatprompts.com</text>
+</svg>

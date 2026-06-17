@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BigFatPrompts — Big, fat prompts for building in Framer</title>
+  <meta name="description" content="A curated directory of battle-tested prompts for the Framer agent. Build landing pages, animations, CMS, copy and more — faster. Copy, paste, ship." />
+  <link rel="canonical" href="https://bigfatprompts.com/" />
+  <meta name="theme-color" content="#0a0a0b" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="BigFatPrompts" />
+  <meta property="og:title" content="BigFatPrompts — Big, fat prompts for building in Framer" />
+  <meta property="og:description" content="A curated directory of battle-tested prompts for the Framer agent. Copy, paste, ship better sites." />
+  <meta property="og:url" content="https://bigfatprompts.com/" />
+  <meta property="og:image" content="https://bigfatprompts.com/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="BigFatPrompts — Big, fat prompts for building in Framer" />
+  <meta name="twitter:description" content="A curated directory of battle-tested prompts for the Framer agent. Copy, paste, ship better sites." />
+  <meta name="twitter:image" content="https://bigfatprompts.com/og.png" />
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#grid">Skip to prompts</a>
+
+  <header class="header">
+    <div class="header-inner">
+      <a class="brand" href="/" aria-label="BigFatPrompts home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="3" y="3" width="18" height="18" rx="5" fill="currentColor" />
+            <path d="M8.5 15.5V8.5h3.2a2.1 2.1 0 0 1 0 4.2H8.5" stroke="#0a0a0b" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="brand-name">BigFatPrompts</span>
+        <span class="brand-badge">for Framer</span>
+      </a>
+      <nav class="nav">
+        <a href="#grid">Prompts</a>
+        <a href="#" id="nav-submit">Submit</a>
+        <a id="nav-github" href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Framer Agents · 2026</p>
+      <h1 class="hero-title">Big, fat prompts for<br /><span class="accent">building in Framer.</span></h1>
+      <p class="hero-sub">A curated directory of copy-paste prompts for the Framer agent — landing pages, animations, CMS, copy and more. Steal the good ones.</p>
+      <div class="search-wrap">
+        <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="m20 20-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <input id="search" type="search" placeholder="Search prompts — e.g. hero, scroll animation, pricing…" autocomplete="off" aria-label="Search prompts" />
+        <kbd class="search-kbd">/</kbd>
+      </div>
+      <p class="hero-stats"><span id="stat-prompts">—</span> prompts · <span id="stat-categories">—</span> categories · free &amp; open</p>
+    </section>
+
+    <nav class="categories" id="categories" aria-label="Prompt categories"></nav>
+
+    <div class="toolbar">
+      <div class="toolbar-count"><span id="count">—</span> prompts</div>
+      <div class="toolbar-sort">
+        <label for="sort">Sort</label>
+        <select id="sort" aria-label="Sort prompts">
+          <option value="featured">Featured</option>
+          <option value="top">Top rated</option>
+          <option value="az">A–Z</option>
+        </select>
+      </div>
+    </div>
+
+    <section class="grid" id="grid" aria-live="polite"></section>
+
+    <p class="empty" id="empty" hidden>No prompts match that search. Try a different term.</p>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <span class="brand-name">BigFatPrompts</span>
+        <p class="footer-note">Built for the Framer Agents Hackathon · 2026</p>
+      </div>
+      <div class="footer-links">
+        <a href="#" id="footer-submit">Submit a prompt</a>
+        <a id="footer-github" href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.framer.com/agents/" target="_blank" rel="noopener">Framer Agents ↗</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Prompt detail modal -->
+  <div class="modal" id="modal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" data-close aria-label="Close">×</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="/data.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>
